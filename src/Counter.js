@@ -1,9 +1,10 @@
 import React from 'react';
+import './App.css';
 
 function Counter(props){
     return(
         <div>
-            <h1>Value of Counter is: {props.process} </h1>
+            <div className="counter-box">{props.process}</div>
         </div>
     );
 }
