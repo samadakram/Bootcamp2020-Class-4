@@ -55,10 +55,19 @@
 }
 .dark-mode{
   background-color: #37474F;
+  
 }
 .light-h5{
   color: #37474F;
+  margin: auto 0px auto 0px;
+  font-size: 1rem;
 }
 .dark-h5{
   color: #DEE4E7;
+  margin: auto 0px auto 0px;
+  font-size: 1rem;
+}
+.mode-btn{
+  height: 30px;
+  font-weight: bold;
 }
