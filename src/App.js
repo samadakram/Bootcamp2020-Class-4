@@ -12,7 +12,7 @@ function App(){
     <div className={`container ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
       <div className="mode">
         <h5 className={isDarkMode ? 'dark-h5' : 'light-h5'}> {isDarkMode ? 'DARK MODE' : 'LIGHT MODE'} : </h5>
-        <button className="mode-btn" onClick={()=> setDarkMode(!isDarkMode)}>Switch to {isDarkMode ? 'Light Mode' : 'Dark Mode'} </button>
+        <button className={(isDarkMode ? 'mode-btn-dark' : 'mode-btn-light')} onClick={()=> setDarkMode(!isDarkMode)}>Switch to {isDarkMode ? 'Light Mode' : 'Dark Mode'} </button>
       </div>
       <div className="main">
         <Counter process={count} />

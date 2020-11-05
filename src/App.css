@@ -6,14 +6,15 @@
 .container{
   width: 100vw;
   height: 100vh;
-  border: 1px solid green;
   position: relative;
 }
 .main{
   width: 20%;
   margin: auto;
   text-align: center;
-  border: 1px solid blue;
+  position: absolute;
+  left: 40%;
+  top: 20%;
 }
 .counter-box{
   width: 100px;
@@ -22,7 +23,9 @@
   font-size: 3rem;
   text-align: center;
   margin: auto;
-  border: 1px solid black;
+}
+.counter-box-dark{
+  color: #DEE4E7;
 }
 .increment, .decrement, .reset{
   width: 100px;
@@ -48,7 +51,6 @@
   right: 10px;
   display: flex;
   justify-content: space-around;
-  border: 1px solid purple;
 }
 .light-mode{
   background-color: #DEE4E7;
@@ -67,7 +69,15 @@
   margin: auto 0px auto 0px;
   font-size: 1rem;
 }
-.mode-btn{
+.mode-btn-dark{
+  background-color: #DEE4E7;
+  color: #37474F;
+  height: 30px;
+  font-weight: bold;
+}
+.mode-btn-light{
+  background-color: #37474F;
+  color: #DEE4E7;
   height: 30px;
   font-weight: bold;
 }
