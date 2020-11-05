@@ -20,4 +20,15 @@
 .increment, .decrement, .reset{
   width: 100px;
   height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 5px 5px 0px 5px;
+  border-radius: 10px;
+  outline: none;
+}
+.increment{
+  background-color: yellow;
+}
+.decrement{
+  background-color: #ff0000;
 }
