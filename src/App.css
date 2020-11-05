@@ -42,10 +42,12 @@
 /* mode section */
 
 .mode{
-  width: 200px;
+  width: 300px;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-around;
   border: 1px solid purple;
 }
 .light-mode{
