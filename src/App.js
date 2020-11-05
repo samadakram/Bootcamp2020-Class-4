@@ -4,14 +4,24 @@ import './App.css';
 
 function App(){
 
-  let [count, setCount] = useState(0)
+  let [count, setCount] = useState(0);
+
+  let [isDarkMode, setDarkMode] = useState(false);
 
   return(
-    <div className="main">
-      <Counter process={count} />
-      <button className="increment" onClick={()=> setCount(++count)}>Increment</button>
-      <button className="decrement" onClick={()=> setCount(--count)}>Decrement</button>
-      <button className="reset" onClick={()=> setCount(0)}>Reset</button>
+    <div className={`container ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
+      <div className="mode">
+        <h5> {isDarkMode ? 'Dark Mode' : 'Light Mode'} </h5>
+        <button onClick={()=> setDarkMode(!isDarkMode)}>
+          Switch to {isDarkMode ? 'Light Mode' : 'Dark Mode'}  
+        </button>
+      </div>
+      <div className="main">
+        <Counter process={count} />
+        <button className="increment" onClick={()=> setCount(++count)}>Increment</button>
+        <button className="decrement" onClick={()=> setCount(--count)}>Decrement</button>
+        <button className="reset" onClick={()=> setCount(0)}>Reset</button>
+      </div>
     </div>
   );
 }
