@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Counter from './Counter';
 import './App.css';
-import { StatePractice } from './Components/StatePactice';
 
 function App(){
 
@@ -20,12 +19,6 @@ function App(){
         <button className="increment" onClick={()=> setCount(++count)}>Increment</button>
         <button className="decrement" onClick={()=> setCount(--count)}>Decrement</button>
         <button className="reset" onClick={()=> setCount(0)}>Reset</button>
-
-
-        <div>
-          <StatePractice />
-        </div>
-
       </div>
     </div>
   );
