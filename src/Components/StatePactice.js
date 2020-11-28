@@ -22,7 +22,9 @@ export const StatePractice = () => {
         // Calling Object in state
         setObj({
             name: "Abdul Samad",
-            email: "samad@gmail.com"
+            email: "samad@gmail.com",
+            ...obj,
+            school: "Saylani"
         });
 
 
@@ -40,7 +42,8 @@ export const StatePractice = () => {
 
             {/* Object Example */}
             <h2>{obj.name}</h2>
-            <h3>{ obj.email }</h3>
+            <h3>{obj.email}</h3>
+            <h4>{obj.school}</h4>
 
 
 
